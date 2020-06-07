@@ -10,7 +10,9 @@ namespace NurseMobile
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            //MainPage = new AuthPage();
+            MainPage = new NavigationPage(new NursesList());
+
         }
 
         protected override void OnStart()
