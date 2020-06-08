@@ -10,8 +10,8 @@ namespace NurseMobile
         {
             InitializeComponent();
 
-            //MainPage = new AuthPage();
-            MainPage = new NavigationPage(new NursesList());
+            MainPage = new AuthPage();
+            //MainPage = new NavigationPage(new NursesList());
 
         }
 

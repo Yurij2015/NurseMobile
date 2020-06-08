@@ -15,10 +15,10 @@ namespace NurseMobile
             Nurse nurse = obj as Nurse;
             return this.Id == nurse.Id;
         }
-        //public override int GetHashCode()
-        //{
-        //    return this.Id.GetHashCode();
-        //}
+        public override int GetHashCode()
+        {
+            return this.Id.GetHashCode();
+        }
 
     }
 

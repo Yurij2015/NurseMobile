@@ -6,9 +6,16 @@
              mc:Ignorable="d"
              x:Class="NurseMobile.AuthPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Ежедневник медсестры. Страница авторизации!"
+        <StackLayout Padding="20"  BackgroundColor="Violet">
+            <Label Text="Страница авторизации!"
                 HorizontalOptions="CenterAndExpand" />
+            <Label Text="Ежедневник медсестры"
+                HorizontalOptions="CenterAndExpand" FontSize="Large" TextColor="White" Margin="0,20, 0, 0" />
+            <Entry x:Name="loginEntry"  Placeholder="Login" Margin="0, 30, 0, 0" BackgroundColor="White" />
+            <Entry x:Name="passwordEntry"  Placeholder = "Password" IsPassword ="True" BackgroundColor="White" />
+            <Label x:Name="textLabel" FontSize="Large" />
+            <Button Text = "Войти" BorderWidth="1" Margin="250, 0, 10, 0"/>
+            <Button Text = "Зарегистрироваться" BorderWidth="1" Margin="150,10,10,0" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
