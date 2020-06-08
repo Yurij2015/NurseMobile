@@ -4,14 +4,16 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="NurseMobile.DiagnosticPage">
+             x:Class="NurseMobile.MenuPage">
     <ContentPage.Content>
-        <StackLayout>
-            <StackLayout Orientation="Horizontal">
-                <Button Text="Go" Clicked="button_Clicked" />
-                <Entry x:Name="urlEntry" HorizontalOptions="FillAndExpand" />
-            </StackLayout>
-            <WebView x:Name="webView" Source="http://bikerider.webstroj.16mb.com/bike-ride/bike-ride/" VerticalOptions="FillAndExpand" />
+        <StackLayout Padding="20"  BackgroundColor="Violet">
+            <Button Text = "Выход" Margin="250, 0, 10, 0"/>
+
+            <Label x:Name="label" Text="Выберите дату" FontSize="Medium" />
+            <DatePicker Format="D">
+                <DatePicker.MaximumDate>6/07/2020</DatePicker.MaximumDate>
+            </DatePicker>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

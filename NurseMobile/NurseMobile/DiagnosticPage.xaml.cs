@@ -16,5 +16,14 @@ namespace NurseMobile
         {
             InitializeComponent();
         }
+
+
+        void button_Clicked(object sender, EventArgs e)
+        {
+            webView.Source = new UrlWebViewSource { Url = urlEntry.Text };
+            // или так
+            // webView.Source = urlEntry.Text;
+        }
+
     }
 }
