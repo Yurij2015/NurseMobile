@@ -90,13 +90,16 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\drawable\" />
+    <AndroidResource Include="Resources\drawable\jjj.jpg" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NurseMobile\NurseMobile.csproj">
       <Project>{410BAD86-7B30-4265-976B-38E048B2862A}</Project>
       <Name>NurseMobile</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

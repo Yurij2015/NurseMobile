@@ -7,11 +7,13 @@
              x:Class="NurseMobile.DiagnosticPage">
     <ContentPage.Content>
         <StackLayout>
-            <StackLayout Orientation="Horizontal">
-                <Button Text="Go" Clicked="button_Clicked" />
-                <Entry x:Name="urlEntry" HorizontalOptions="FillAndExpand" />
-            </StackLayout>
-            <WebView x:Name="webView" Source="http://bikerider.webstroj.16mb.com/bike-ride/bike-ride/" VerticalOptions="FillAndExpand" />
+            <!--<StackLayout Orientation="Horizontal">
+                --><!--<Button Text="Go" Clicked="button_Clicked" />-->
+                <!--<Button Text="Обновить" Clicked="button_Clicked" WidthRequest="100" />-->
+               
+                <!--<Entry x:Name="urlEntry" HorizontalOptions="FillAndExpand" />--><!--
+            </StackLayout>-->
+            <WebView x:Name="webView" Source="http://nurse-mobile-app.superms.ru/admin" VerticalOptions="FillAndExpand" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -5,11 +5,13 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="NurseMobile.MenuPage">
-    <ContentPage.Content>
-        <StackLayout Padding="20"  BackgroundColor="Violet">
-            <Button Text = "Выход" Margin="250, 0, 10, 0"/>
 
-            <Label x:Name="label" Text="Выберите дату" FontSize="Medium" />
+    <ContentPage.Content>
+
+        <StackLayout Padding="20"  BackgroundColor="Violet">
+            <Image Source="Logo2.png"  />
+            <Button Text = "Выход" Margin="250, 0, 10, 0"/>
+            <Label x:Name="label" Text="Выберите дату" Margin="0, 100, 0, 0" FontSize="Medium" />
             <DatePicker Format="D">
                 <DatePicker.MaximumDate>6/07/2020</DatePicker.MaximumDate>
             </DatePicker>

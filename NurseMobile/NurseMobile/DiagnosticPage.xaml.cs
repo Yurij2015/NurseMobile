@@ -20,7 +20,9 @@ namespace NurseMobile
 
         void button_Clicked(object sender, EventArgs e)
         {
-            webView.Source = new UrlWebViewSource { Url = urlEntry.Text };
+            //webView.Source = new UrlWebViewSource { Url = urlEntry.Text };
+            webView.Source = new UrlWebViewSource { Url = "http://nurse-mobile-app.superms.ru/admin" };
+
             // или так
             // webView.Source = urlEntry.Text;
         }
