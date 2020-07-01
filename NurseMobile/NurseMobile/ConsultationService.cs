@@ -27,5 +27,16 @@ namespace NurseMobile
             return JsonConvert.DeserializeObject<IEnumerable<Consultation>>(result);
         }
 
+        public async Task<Consultation> Update(Consultation consultation)
+        {
+            HttpClient client = GetClient();
+            var response = await client.PutAsync(Url + "/" + consultation.Id, new StringContent(JsonConvert.SerializeObject(consultation), Encoding.UTF8, "application/json"));
+            if (response.StatusCode != HttpStatusCode.OK)
+                return null;
+
+            return JsonConvert.DeserializeObject<Consultation>(await response.Content.ReadAsStringAsync());
+
+        }
+
     }
 }

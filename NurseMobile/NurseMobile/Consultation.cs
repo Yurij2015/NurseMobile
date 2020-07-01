@@ -11,7 +11,7 @@ namespace NurseMobile
         public string Time { get; set; }
         public string DoctorSpeciality { get; set; }
         public string Patient { get; set; }
-        public int Status { get; set; }
+        public string Status { get; set; }
 
         public override bool Equals(object obj)
         {

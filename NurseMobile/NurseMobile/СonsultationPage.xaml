@@ -7,17 +7,17 @@
              x:Class="NurseMobile.СonsultationPage">
     <ContentPage.Content>
         <StackLayout BackgroundColor="Violet">
-            <Label Text="Консультации 26.06.2020"
+            <Label Text="Консультации 01.07.2020"
                 HorizontalOptions="End" Margin="0, 0, 5, 0" />
             <Image Source="Logo2.png" WidthRequest="50" HorizontalOptions="Start" Margin="5, 0, 0, 5" />
-            <Grid Margin="0,0,0,0" RowSpacing="0" ColumnSpacing="0" BackgroundColor="White">
+            <Grid Margin="0,0,0,-7" RowSpacing="0" ColumnSpacing="0" BackgroundColor="White">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="0.5*" />
                     <ColumnDefinition Width="0.5*" />
                     <ColumnDefinition Width="0.5*" />
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="30" />
+                    <RowDefinition Height="40" />
                     <RowDefinition Height="0" />
                     <RowDefinition Height="0" />
                 </Grid.RowDefinitions>
@@ -28,11 +28,11 @@
             <ListView  ItemsSource="{Binding Consultations}" Margin="0">
                <ListView.ItemTemplate>
                     <DataTemplate>
-                        <ViewCell >
+                        <ViewCell>
                             <Grid BackgroundColor="White" Margin="0" RowSpacing="0" ColumnSpacing="0">
-                                <Label Grid.Column="0" Text="{Binding Time}" BackgroundColor="Violet" Margin="1, 1, 0, 1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                                <Label Grid.Column="0" Text="{Binding Time}" BackgroundColor="Violet" Margin="1, 1, 0, 1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold"/>
                                 <Label Grid.Column="1" Text="{Binding DoctorSpeciality}" BackgroundColor="Violet"  Margin="1, 1, 0, 1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
-                                <Label Grid.Column="2" Text="{Binding Patient}" HorizontalTextAlignment="Center" BackgroundColor="Violet"  Margin="1, 1, 1, 1" VerticalTextAlignment="Center" FontSize="Small" />
+                                <Label Grid.Column="2" Text="{Binding Patient}" HorizontalTextAlignment="Center" BackgroundColor="{Binding Status}"  Margin="1, 1, 1, 1" VerticalTextAlignment="Center" FontSize="Small" />
                             </Grid>
                         </ViewCell>
                     </DataTemplate>
