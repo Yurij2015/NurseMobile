@@ -8306,10 +8306,10 @@ namespace NurseMobile.Droid
 			public const int ic_mtrl_chip_close_circle = 2131165284;
 			
 			// aapt resource value: 0x7F070065
-			public const int jjj = 2131165285;
+			public const int Logo = 2131165285;
 			
 			// aapt resource value: 0x7F070066
-			public const int Logo = 2131165286;
+			public const int Logo2 = 2131165286;
 			
 			// aapt resource value: 0x7F070067
 			public const int mtrl_snackbar_background = 2131165287;

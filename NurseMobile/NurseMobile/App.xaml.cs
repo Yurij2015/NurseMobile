@@ -11,8 +11,9 @@ namespace NurseMobile
             InitializeComponent();
 
             //MainPage = new AuthPage();
-            MainPage = new DiagnosticPage();
+            //MainPage = new DiagnosticPage();
             //MainPage = new MenuPage();
+            MainPage = new СonsultationPage();
 
             //MainPage = new NavigationPage(new NursesList());
 

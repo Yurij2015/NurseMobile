@@ -11,7 +11,7 @@ namespace NurseMobile
     public class ApplicationViewModel : INotifyPropertyChanged
     {
         bool initialized = false;   // была ли начальная инициализация
-        Nurse selectedFriend;  // выбранный друг
+        Nurse selectedFriend;  // выбранная запись
         private bool isBusy;    // идет ли загрузка с сервера
 
         public ObservableCollection<Nurse> Nurses { get; set; }
@@ -91,7 +91,7 @@ namespace NurseMobile
             IEnumerable<Nurse> nurses = await nursesService.Get();
 
             // очищаем список
-            //Friends.Clear();
+            //Nurses.Clear();
             while (Nurses.Any())
                 Nurses.RemoveAt(Nurses.Count - 1);
 

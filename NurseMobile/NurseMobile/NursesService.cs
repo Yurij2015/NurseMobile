@@ -27,7 +27,7 @@ namespace NurseMobile
             return JsonConvert.DeserializeObject<IEnumerable<Nurse>>(result);
         }
 
-        // добавляем одного друга
+        // добавляем 
         public async Task<Nurse> Add(Nurse nurse)
         {
             HttpClient client = GetClient();
@@ -42,7 +42,7 @@ namespace NurseMobile
             return JsonConvert.DeserializeObject<Nurse>(
                 await response.Content.ReadAsStringAsync());
         }
-        // обновляем друга
+        // обновляем 
         public async Task<Nurse> Update(Nurse nurse)
         {
             HttpClient client = GetClient();
@@ -57,7 +57,7 @@ namespace NurseMobile
             return JsonConvert.DeserializeObject<Nurse>(
                 await response.Content.ReadAsStringAsync());
         }
-        // удаляем друга
+        // удаляем
         public async Task<Nurse> Delete(int id)
         {
             HttpClient client = GetClient();

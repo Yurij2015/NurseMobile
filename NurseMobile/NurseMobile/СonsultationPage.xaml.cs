@@ -12,9 +12,23 @@ namespace NurseMobile
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class СonsultationPage : ContentPage
     {
+
+        //public Consultation Model { get; private set; }
+        //public ConsultationViewModel ViewModel { get; private set; }
+        ConsultationViewModel viewModel;
         public СonsultationPage()
         {
             InitializeComponent();
+            viewModel = new ConsultationViewModel();
+            BindingContext = viewModel;
+
         }
+
+        protected override async void OnAppearing()
+        {
+            await viewModel.GetConsultations();
+            base.OnAppearing();
+        }
+
     }
 }
